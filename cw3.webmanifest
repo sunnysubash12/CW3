@@ -1,0 +1,25 @@
+{
+    "name": "School Classes",
+    "short_name": "SchoolClasses",
+    "description": "My online classes store",
+    "icons": [
+        {
+            "src": "images/192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "images/512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        },
+        {
+            "src": "images/favicon.ico",
+            "sizes": "32x32",
+            "type": "image/ico"
+        }
+    ],
+    "start_url": "index.html",
+    "display": "fullscreen",
+    "background_color": "#260bca"
+}
