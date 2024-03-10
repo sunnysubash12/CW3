@@ -1,0 +1,74 @@
+@import "./base.css";
+
+/* styling for navigation bar*/
+main{
+  text-align: center;
+}
+nav {
+  justify-content: space-between;
+  background-color: lightgray;
+}
+
+.cart button img {
+  width: 30px;
+}
+
+.cart button {
+  float: right;
+  width: auto;
+  text-align: justify;
+  border: 0;
+  background: lightgray;
+  padding: 15px 1.5rem;
+  cursor: pointer;
+}
+
+/* styling for card*/
+.card {
+  text-align: center;
+  height: fit-content;
+  width: 300px;
+  margin: 15px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  box-sizing: border-box;
+  float: left;
+  padding-top: 10px;
+  display: flex;
+}
+
+.card i {
+  float: left;
+  height: 25px;
+  display: block;
+  text-align: center;
+  margin: auto;
+  display: block;
+  padding-top: 5px;
+}
+
+.card p {
+  padding-top: 0 8px;
+  padding-left: 5px;
+}
+
+
+.card button {
+  background: grey;
+  color: black;
+  padding: 15px;
+  width: 100%;
+  border: 0;
+  margin-top: 5px;
+}
+
+.card button:hover {
+  background-color: lightgray;
+}
+
+.card button:disabled:hover {
+  background-color: grey;
+}
+
+.c {
+  padding-top: 300px;
+}
