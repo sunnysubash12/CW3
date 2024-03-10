@@ -5,10 +5,6 @@
             Test Console
         </button>
         <div v-if="testConsole && showTestConsole" class="test-console">
-            <button @click="saveProductToDB" class="test-elem">
-                <span class="fas fa-save"></span>
-                Test Save a Product to the DB
-            </button>
             <button @click="deleteAllCaches" class="test-elem"> <span class="fas fa-trash"></span>
                 Delete All Caches
             </button>
@@ -39,37 +35,6 @@ export default {
         "lessons",
     ],
     methods: {
-        saveProductToDB() {
-            const newProduct = {
-                "subject": "Movie Maker",
-                "location": "123 Oakwook Gardens, Cityville",
-                "price": 95,
-                "spaces": 15,
-                "image": "images/pg.png"
-            }
-
-            //set the url to your server and route
-            fetch("https://project-env.eba-ucw3xqhp.eu-west-2.elasticbeanstalk.com/lessons", {
-                method: "POST",
-                headers: {
-                    "Content-Type": "application/json",
-                },
-                body: JSON.stringify(newProduct),
-            }).then(response => {
-                if (!response.ok) {
-                    throw new Error('error');
-                }
-                return response.json();
-            }).then(json => {
-                console.log("Success: " + json.acknowledged);
-                alert('Order submitted!')
-                this.lessons.push(newProduct);
-            }).catch(error => {
-                console.error('Error submitting order:', error);
-            });
-
-        },
-
         reloadPage() {
             window.location.reload();
         },

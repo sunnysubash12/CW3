@@ -1,9 +1,10 @@
 @import "./base.css";
 
 /* styling for navigation bar*/
-main{
+main {
   text-align: center;
 }
+
 nav {
   justify-content: space-between;
   background-color: lightgray;
@@ -27,7 +28,7 @@ nav {
 .card {
   text-align: center;
   height: fit-content;
-  width: 300px;
+  width: 370px;
   margin: 15px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   box-sizing: border-box;
@@ -69,6 +70,11 @@ nav {
   background-color: grey;
 }
 
-.c {
-  padding-top: 300px;
+.chform {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  display: flex;
+  float: left;
+  margin: 15px;
+  border: 1px solid;
 }
